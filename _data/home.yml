@@ -1,0 +1,19 @@
+navbar_entries:
+  - title: "showcase"
+    url: https://rockingship.github.io
+
+  - title: "splash <div class=\"RockingShip-mark\"></div>"
+    url: https://rockingship.github.io/splash/README.html
+
+  - title: "splash-media <div class=\"GitHub-mark\"></div>"
+    url: https://github.com/RockingShip/splash-media
+
+footer_entries:
+  - title: "showcase"
+    url: https://rockingship.github.io
+
+  - title: "splash <div class=\"RockingShip-mark\"></div>"
+    url: https://rockingship.github.io/splash/README.html
+
+  - title: "splash-media <div class=\"GitHub-mark\"></div>"
+    url: https://github.com/RockingShip/splash-media

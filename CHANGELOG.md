@@ -8,5 +8,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 Media repositories have no releases due to their size.
 
 ```
+2021-04-07 14:01:03 Added: ade/gta videos.
 2021-04-06 20:46:45 Extracted from `jsFractalZoom`.
 ```

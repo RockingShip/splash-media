@@ -43,9 +43,10 @@ $FFMPEG -loglevel warning -stats -r 30 -i splash-gta-100-900x506.mkv  -vf scale=
 echo SBS
 $FFMPEG -loglevel warning -stats -i gta-100-420x236.mkv -i gta-90x50-420x236.mkv -filter_complex "[0:v][1:v]hstack=inputs=2[v]" -map "[v]" -q:v 85 gta-sbs-820x236.webp -y
 $FFMPEG -loglevel warning -stats -i gta-100-900x506.mkv -i gta-90x50-900x506.mkv -filter_complex "[0:v][1:v]hstack=inputs=2[v]" -map "[v]" -q:v 85 gta-sbs-1800x506.webp -y
-$FFMPEG -loglevel warning -stats -i gta-100-900x506.mkv -i gta-90x50-900x506.mkv -filter_complex "[0:v][1:v]hstack=inputs=2[v]" -map "[v]" -crf 18 -profile:v baseline -level 3.0 -movflags +faststart -pix_fmt yuv420p gta-sbs-1800x506.mp4 -y
 
 # preview
 $FFMPEG -loglevel warning -stats -i gta-frames/gta-001.png -q 0 gta-900x506.jpg -y
 $FFMPEG -loglevel warning -stats -i gta-100-420x236.mkv -i gta-90x50-420x236.mkv -filter_complex "[0:v][1:v]hstack=inputs=2[v]" -map "[v]" -ss 2 -frames:v 1 -q 0 gta-sbs-820x236.jpg -y
 $FFMPEG -loglevel warning -stats -i gta-100-900x506.mkv -i gta-90x50-900x506.mkv -filter_complex "[0:v][1:v]hstack=inputs=2[v]" -map "[v]" -ss 2 -frames:v 1 -q 0 gta-sbs-1800x506.jpg -y
+
+ffmpeg -loglevel warning -stats -i trek-20ppf.mp4 -i trek-6fps.mp4 -filter_complex "[0:v][1:v]hstack=inputs=2[v]" -map "[v]" -crf 18 -profile:v baseline -level 3.0 -movflags +faststart -pix_fmt yuv420p gta-sbs-1800x506.mp4 -y

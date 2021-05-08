@@ -40,6 +40,11 @@ This project contains the media files for: [https://github.com/RockingShip/splas
     The border displays processed scan row/columns.  
     The number in the lower left corner is progress (ranging 0-1).
 
+  - [starships-1212x510-OU-crf18.mp4](starships/starships-1212x510-OU-crf18.mp4)  
+    Original video is 24fps and slowed down 6x.  
+    Top: 4fps full frame with traditional scan-lines.  
+    Bottom: 1/6 PixelsPerFrame with scan-rows/cols and paint-brush.
+
 ## Source code
 
 This repository contains about 320M of media files.
